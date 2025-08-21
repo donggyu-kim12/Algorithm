@@ -1,13 +1,11 @@
-a = 10
-if a >= 9:
-    print(123)
-elif a >= 8:
-    print('fff')
+def recur(cnt, num):
+    global a
+    if cnt == 5:
+        a = num
+        return
+    print('____')
+    recur(cnt+1, num +3)
 
-[[[0, 0, 0, 0, 0], 
-  [0, 0, 0, 0, 0], 
-  [0, 0, 0, 0, 0]], 
-  
-  [[0, 0, 0, 0, 0], 
-   [0, 0, 1, 0, 0], 
-   [0, 0, 0, 0, 0]]]
+a = 0
+result = recur(0, 0)
+print(a)
